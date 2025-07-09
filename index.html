@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>My Image Gallery</h1>
+  <div class="filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="nature">Nature</button>
+    <button class="filter-btn" data-category="people">People</button>
+    <button class="filter-btn" data-category="architecture">Architecture</button>
+  </div>
+</header>
+
+<main>
+  <div class="gallery-grid">
+    <!-- sample images -->
+    <div class="gallery-item" data-category="nature"><img src="https://picsum.photos/id/1015/400/300" alt="Nature 1"></div>
+    <div class="gallery-item" data-category="people"><img src="https://picsum.photos/id/1005/400/300" alt="People 1"></div>
+    <div class="gallery-item" data-category="architecture"><img src="https://picsum.photos/id/1025/400/300" alt="Architecture 1"></div>
+    <div class="gallery-item" data-category="nature"><img src="https://picsum.photos/id/1016/400/300" alt="Nature 2"></div>
+    <div class="gallery-item" data-category="people"><img src="https://picsum.photos/id/1011/400/300" alt="People 2"></div>
+    <div class="gallery-item" data-category="architecture"><img src="https://picsum.photos/id/1024/400/300" alt="Architecture 2"></div>
+    <!-- add more items as needed -->
+  </div>
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox hidden">
+  <span class="close-btn">&times;</span>
+  <img class="lightbox-img" src="" alt="">
+  <div class="nav-btn prev-btn">&#10094;</div>
+  <div class="nav-btn next-btn">&#10095;</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
